@@ -1,0 +1,15 @@
+app:
+  name: gkute-poi-gateway-app
+  namespace: gkute
+  cluster: .apps.a1jxqhzp.eastus2.aroapp.io
+
+git:
+  branch: main
+  repo: https://github.com/rhdh-deploy/gkute-gateway
+  org: rhdh-deploy
+  name: gkute-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: gkute/poi-gateway-app
+  tag: latest
